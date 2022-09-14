@@ -6,6 +6,11 @@
 		}, {
 			"route": "/logout",
 			"redirect": "/.auth/logout"
+		}, {
+			"route": "/api/*",
+			"allowedRoles": [
+				"authenticated"
+			]
 		}
 	]
 }
